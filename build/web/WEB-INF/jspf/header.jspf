@@ -1,0 +1,25 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="ui vertical masthead center aligned segment padded">
+    <div class ="ui container">
+        <div class="ui large secondary menu">
+            <a class="ui button item active" href="index.jsp">Home</a>
+            <a class="ui button item" href="about.jsp">About</a>
+            <a class="ui button item" href="login.jsp">Sign Up!</a>
+            
+             <c:if test="${user == null}">
+                <a class="ui right floated primary inverted button item" href="login.jsp">Login</a>
+            </c:if>  
+            <c:if test="${user != null}">
+                <a class="ui right floated button item">Hi ${user.username}</a>
+            </c:if>
+        </div>
+    </div>
+    <div class="ui text container">
+        <h1 class="ui header">Test Header</h1>
+        <h2 class="ui">This is a test subheader</h2>
+<!--        <div class="ui huge primary button">This is a test button 
+            <i class="right arrow icon"></i>
+        </div>-->
+    </div>
+</div> 
