@@ -1,11 +1,11 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<div class="ui vertical footer segment">
-    <div class="ui center aligned container">
-        <div class="ui stackable grid">
-            <div class="three wide column">
-                This is where copyright goes
-            </div>
+<div class="ui bottom fixed menu footer inverted">
+    <div class="ui container">
+        <div class="ui item">
+            made with <i class="heart icon"></i> by Hannah Zabarsky
         </div>
+        <div class="ui item float right">
+            <i class="copyright icon"></i> copyright 2020 </div>
     </div>
 </div>
