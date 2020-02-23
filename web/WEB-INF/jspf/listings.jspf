@@ -1,0 +1,44 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="ui divided items padded segment">
+    <div class="item">
+        <div class="ui small circular image">
+            <img src="images/puppy3.jpg">
+        </div>
+        <div class="content">
+            <a class="header">Freddie</a>
+            <div class="meta">
+                <span>Description</span>
+            </div>
+            <div class="description">
+                <p></p>
+            </div>
+            <div class="extra">
+                Additional Details
+            </div>
+            <div>
+            <a class="ui right floated primary button">adopt me today!</a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="ui small circular image">
+            <img src="images/puppy2.jpg">
+        </div>
+        <div class="content">
+            <a class="header">Maxie</a>
+            <div class="meta">
+                <span>Description</span>
+            </div>
+            <div class="description">
+                <p></p>
+            </div>
+            <div class="extra">
+                Additional Details
+            </div>
+            <div>
+            <a class="ui right floated primary button">adopt me today!</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -26,46 +26,17 @@
             </div>
 
             <div class="main container ui padded" >
-                <div class="ui padded">
-                    <div class="ui row">
-                        <h1 class="ui header">Welcome!</h1>
+                <div class="ui grid padded">
+                    <div class="ui row centered">
+                        <h1 class="ui header">Welcome to our pet rescue!</h1>
                     </div>
-                    <div class="ui items padded segment">
-                        <div class="item">
-                            <div class="image">
-                                <img src="images/puppy.jpg">
-                            </div>
-                            <div class="content">
-                                <a class="header">Header</a>
-                                <div class="meta">
-                                    <span>Description</span>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="images/puppy.jpg">
-                            </div>
-                            <div class="content">
-                                <a class="header">Header</a>
-                                <div class="meta">
-                                    <span>Description</span>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="extra">
-                                    Additional Details
-                                </div>
-                            </div>
+                        <div class="ten wide centered column">
+                        <%@include file="WEB-INF/jspf/listings.jspf" %>
                         </div>
                     </div>
+                    
+
+                   
                 </div>
             </div>
         </div>
