@@ -24,12 +24,11 @@
             </div>
             
             <div class="main container ui text container padded">
-                <img class="ui image medium" src="images/personwithpuppy.jpg" alt="person with puppy in crate">
-                <h2 class="ui header">About us:</h2>
+                <h1 class="ui centered header">About Us</h1>
+                 <img class="ui medium left floated image" src="images/personwithpuppy.jpg" alt="person with puppy in crate">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                
-            </div>
+                </div> 
             
         </div>
         <%@include file="/WEB-INF/jspf/footer.jspf" %>
