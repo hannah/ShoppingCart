@@ -12,9 +12,9 @@
                 About
             </a>
 <!--            <a class="ui button item" href="login.jsp">Sign Up!</a>-->
-<div class="item right floated">
+<div class="right menu">
     <c:if test="${user == null}">
-        <a class="ui large primary inverted button ${pageContext.request.requestURI eq '/home/login.jsp' ? ' active' : ''}" href="login.jsp">Login</a>
+        <a class="ui large primary button inverted ${pageContext.request.requestURI eq '/home/login.jsp' ? ' active' : ''}" href="login.jsp">Login</a>
     </c:if>  
     <c:if test="${user != null}">
         <a class="ui item">Hello, ${user.username}!</a>

@@ -17,7 +17,7 @@
                 Additional Details
             </div>
             <div>
-            <a class="ui right floated primary button">adopt me today!</a>
+            <a class="ui right floated large primary inverted button">adopt me today!</a>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
                 Additional Details
             </div>
             <div>
-            <a class="ui right floated primary button">adopt me today!</a>
+            <a class="ui right floated large primary inverted button">adopt me today!</a>
             </div>
         </div>
     </div>

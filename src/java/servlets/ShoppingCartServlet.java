@@ -8,6 +8,7 @@ package servlets;
 import beans.User;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashSet;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,10 +27,23 @@ public class ShoppingCartServlet extends HttpServlet {
         String password = request.getParameter("password");       
         String url = "/index.jsp";
         String error = "";
+        String errorTag ="";
         
-        User user = new User(username, password);
-        request.setAttribute("user", user);
-        request.setAttribute("error-message", error);
+        
+        if(password.equals("test") && username.equals("testuser")){
+            User user = new User(username, password);
+            request.setAttribute("user", user);
+        } else {
+            errorTag = "error";
+            error="Incorrect username or password. Please try again!";
+            url="/login.jsp";
+            request.setAttribute("password", password);
+            request.setAttribute("username", username);
+         };
+        
+        request.setAttribute("error", error);
+        request.setAttribute("errorTag", errorTag);
+        
         
         getServletContext()
                 .getRequestDispatcher(url)
