@@ -11,9 +11,11 @@ import java.io.PrintWriter;
 import java.util.HashSet;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -28,11 +30,15 @@ public class ShoppingCartServlet extends HttpServlet {
         String url = "/index.jsp";
         String error = "";
         String errorTag ="";
-        
+        HttpSession session = request.getSession();
+
         
         if(password.equals("test") && username.equals("testuser")){
             User user = new User(username, password);
-            request.setAttribute("user", user);
+            session.setAttribute("user", user);
+            session.setAttribute("loggedin", "true");
+            Cookie cookie = new Cookie("username", username);
+                    response.addCookie(cookie);
         } else {
             errorTag = "error";
             error="Incorrect username or password. Please try again!";

@@ -17,7 +17,8 @@
         <a class="ui large primary button inverted ${pageContext.request.requestURI eq '/home/login.jsp' ? ' active' : ''}" href="login.jsp">Login</a>
     </c:if>  
     <c:if test="${user != null}">
-        <a class="ui item">Hello, ${user.username}!</a>
+        <a class="ui item">Hello, ${cookie.username.value}!</a>
+        <a class="ui primary button inverted" href="logout">Logout</a>
     </c:if>
 </div>
         </div>
